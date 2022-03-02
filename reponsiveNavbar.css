@@ -1,0 +1,32 @@
+@media (max-width: 1023px) {
+    .navbar li a {
+        font-size: .9rem;
+    }
+    .nav-pl {
+        padding-left: 20px;
+    }
+}
+
+
+/*  */
+
+@media (max-width: 767px) {
+    .nav-right {
+        position: absolute;
+        top: 20px;
+        right: 80px;
+    }
+    .nav-right li {
+        display: inline-block;
+    }
+    .nav-search {
+        position: absolute;
+        width: 100%;
+        left: 0;
+        right: 0;
+        top: 100%;
+    }
+    .nav-pl {
+        padding-left: 5px;
+    }
+}

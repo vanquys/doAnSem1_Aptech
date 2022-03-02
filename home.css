@@ -1,0 +1,473 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #e42053;
+}
+
+
+/*   */
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    color: #222;
+    position: relative;
+}
+
+li {
+    list-style: none;
+}
+
+
+/* navbar */
+
+.navbar-space {
+    height: 89.19px;
+    width: 100%;
+}
+
+.navbar {
+    background-color: #fff !important;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.navbar li a {
+    color: black !important;
+    z-index: 1001;
+}
+
+.nav-link {
+    padding: 10px 0.7rem !important;
+}
+
+.navbar li a.nav-link__active {
+    padding: 10px 25px !important;
+    background-color: var(--primary-color);
+    color: white !important;
+}
+
+.navbar li a:hover {
+    color: rgb(58, 52, 52) !important;
+}
+
+.navbar-toggler {
+    border: none;
+    margin-bottom: 8px;
+}
+
+.navbar-toggler i {
+    color: black;
+}
+
+.nav-search {
+    position: absolute;
+    left: 70%;
+    width: 30%;
+    top: 100%;
+    background-color: rgba(70, 74, 80, 0.9);
+    padding: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    overflow: hidden;
+}
+
+.nav-search__input {
+    background-color: rgba(82, 64, 120, 0);
+    border: none;
+    border-bottom: 1px solid rgba(136, 117, 123, 0.5);
+    color: white !important;
+}
+
+.nav-search__input:focus {
+    background-color: rgba(82, 64, 120, 0);
+    border: none;
+    box-shadow: none;
+    border-bottom: 1px solid rgba(136, 117, 123, 0.5);
+}
+
+.nav-search__btn {
+    width: 40px;
+    text-align: center;
+    padding-top: 8px;
+    border-bottom: 1px solid rgba(136, 117, 123, 0.5);
+    ;
+}
+
+.nav-pl {
+    padding-left: 50px;
+}
+
+.nav-search__btn .icons {
+    color: white;
+    font-size: .9rem;
+    margin: auto;
+}
+
+
+/* cart  */
+
+.cart-item-container {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    padding-top: 30px;
+    padding: 10px 20px;
+    position: fixed;
+    height: 90vh;
+    width: 400px;
+    top: 86px;
+    z-index: 100;
+    background-color: aquamarine;
+    right: -200%;
+    transition: all 0.5s ease;
+}
+
+.cart-icon {
+    cursor: pointer;
+}
+
+.cart-title {
+    margin-bottom: 30px;
+}
+
+h5.cart-title>a {
+    color: #000 !important;
+    text-decoration: none;
+}
+
+
+/* End navbar */
+
+
+/*  */
+
+.all-section {
+    margin-top: 86.19px;
+}
+
+.carousel-inner a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/*  */
+
+.container {
+    width: 100%;
+    letter-spacing: 1px;
+}
+
+.container .section-heading {
+    background: var(--primary-color);
+    color: white;
+    width: 200px;
+    text-align: center;
+    font-size: 24px;
+    padding: 5px;
+    height: 40px;
+    margin-top: 30px;
+}
+
+.container .heading-after {
+    border-color: var(--primary-color) transparent transparent transparent;
+    border-style: solid;
+    border-width: 40px 50px 0px 0px;
+    height: 0px;
+    position: relative;
+    width: 0px;
+    top: -48px;
+    left: 200px;
+}
+
+.new-product-1 .product-item {
+    box-shadow: 3px 3px 15px lightgrey, -3px -3px 15px lightgrey;
+}
+
+.product-bottom p {
+    color: #f10b59;
+}
+
+.container .row .product-top img {
+    width: 100%;
+    border-radius: 2px
+}
+
+.container .row .product-bottom .fa {
+    color: rgb(210, 212, 45);
+    font-size: 15px;
+}
+
+.container .row .product-bottom h3 {
+    font-size: 15px;
+    padding-top: 10px;
+}
+
+.container .row .overlay {
+    display: block;
+    opacity: 0;
+    position: absolute;
+    top: 10%;
+    margin-left: 0;
+    width: 70px;
+}
+
+.container .row .product-top:hover .overlay {
+    opacity: 1;
+    margin-left: 5%;
+    transition: 0.5s;
+}
+
+.container .row .overlay .fa {
+    cursor: pointer;
+    background-color: white;
+    color: #000;
+    height: 35px;
+    width: 35px;
+    font-size: 20px;
+    padding: 7px;
+    margin: 5%;
+    margin-bottom: 5%;
+}
+
+.container .row .overlay .btn-secondary {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.new-product-2 {
+    border: 1px solid darkgray;
+    height: 500px;
+    overflow: hidden;
+}
+
+.new-product__carousel .carousel-item {
+    height: 500px;
+}
+
+
+/* end new product */
+
+
+/* Review */
+
+.section-4 {
+    margin-top: 100px;
+}
+
+.review .section-heading {
+    margin-top: -65px;
+}
+
+.review .row {
+    margin-top: -50px;
+}
+
+.review-user {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 12px 0;
+}
+
+.user-avatar {
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+    position: relative;
+    border-radius: 50%;
+}
+
+.user-name {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: black;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    height: 300px;
+}
+
+
+/* End Review */
+
+
+/* FeedBack*/
+
+.get-in-touch {
+    max-width: 800px;
+    margin: 50px auto;
+    position: relative;
+}
+
+.get-in-touch .title {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 3.2em;
+    line-height: 48px;
+    padding-bottom: 48px;
+    color: #5543ca;
+    background: #5543ca;
+    background: -moz-linear-gradient(left, #f4524d 0%, #5543ca 100%) !important;
+    background: -webkit-linear-gradient(left, #f4524d 0%, #5543ca 100%) !important;
+    background: linear-gradient(to right, #f4524d 0%, #5543ca 100%) !important;
+    -webkit-text-fill-color: transparent !important;
+}
+
+.feedback-form .form-field {
+    position: relative;
+    margin: 32px 0;
+}
+
+.feedback-form .input-text:not(:placeholder-shown)+label {
+    bottom: 25px;
+}
+
+
+/* 
+.feedback-form .input-text:placeholder-shown+label {
+    bottom: 1000px;
+} */
+
+.feedback-form .input-text {
+    display: block;
+    width: 100%;
+    height: 36px;
+    border-width: 0 0 2px 0;
+    border-color: #5543ca;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+}
+
+.feedback-form .input-text:focus {
+    outline: none;
+}
+
+.feedback-form .input-text:focus+.label,
+.feedback-form .input-text.not-empty+.label {
+    -webkit-transform: translateY(-24px);
+    transform: translateY(-24px);
+}
+
+.feedback-form .label {
+    position: absolute;
+    left: 20px;
+    bottom: 25px;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #5543ca;
+    cursor: text;
+    transition: -webkit-transform .2s ease-in-out;
+    transition: transform .2s ease-in-out;
+    transition: transform .2s ease-in-out, -webkit-transform .2s ease-in-out;
+}
+
+.feedback-form .submit-btn {
+    display: inline-block;
+    background-color: #000;
+    background-image: linear-gradient(125deg, #a72879, #064497);
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 16px;
+    padding: 8px 16px;
+    border: none;
+    width: 200px;
+    cursor: pointer;
+}
+
+
+/* FOOTER */
+
+
+/* ul,
+li {
+    padding-left: 0;
+} */
+
+a {
+    color: #000;
+}
+
+a:hover {
+    color: #000;
+}
+
+.footer-top {
+    background-color: var(--primary-color);
+    font-size: 1.1rem;
+    color: #000;
+}
+
+.footer-top__icon {
+    margin-top: 30px;
+}
+
+.footer-top__icon a {
+    font-size: 1.7rem;
+    text-decoration: none;
+    color: rgb(19, 55, 148);
+}
+
+.footer-top__icon a:hover {
+    color: rgb(64, 64, 206);
+}
+
+.footer-top__email {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid darkgray;
+    padding: 5px 20px;
+    font-size: .9rem;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+.footer-btn {
+    width: 30%;
+    padding: 5px 10px;
+    margin-top: 20px;
+    color: #fafafa;
+    border: .1px solid rgb(207, 204, 204);
+    border-radius: 5px;
+    background-color: #333836;
+    font-size: .7rem;
+}
+
+.footer-menu {
+    padding-left: 60px;
+}
+
+.footer-btn:hover {
+    background-color: darkgrey;
+}
+
+.footer-bottom {
+    background-color: black;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.footer-bottom p i {
+    color: rgb(70, 70, 208);
+    cursor: pointer;
+}

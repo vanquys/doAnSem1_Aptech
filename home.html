@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>simplont</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <!-- reset css -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="reponsiveNavbar.css">
+    <link rel="stylesheet" href="reponsiveHome.css">
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-branch " href="home.html">
+                <img src="./images/home/Logo.png" height="70">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                <i class="fas fa-list"></i>
+                    </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto mr-auto">
+                    <li class="nav-item nav-pl">
+                        <a class="nav-link nav-link__active" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item nav-pl">
+                        <a class="nav-link" href="product.html">Product</a>
+                    </li>
+                    <li class="nav-item nav-pl">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item nav-pl">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+
+                    <li class="nav-item nav-pl">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <ul class="nav-right d-flex mb-0 pl-0">
+                <li class="nav-right__search">
+                    <a class="nav-link" type="button" data-toggle="collapse" data-target="#nav-search" href="#">
+                        <div class="fas fa-search icons"></div>
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-link">
+                        <i id="cart-icon" class="fas fa-cart-plus active-cart cart-icon"></i>
+                        <!-- <i id="cart-times" class="fas fa-times cart-times "></i> -->
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-link nav-right__login" href="#">
+                            Login
+                        </a>
+                </li>
+            </ul>
+        </div>
+        <div class="nav-search input-group mb-3 collapse" id="nav-search">
+            <input type="text" class="nav-search__input form-control" placeholder="Search">
+            <div class="nav-search__btn input-group-append">
+                <div class="fas fa-search icons"></div>
+            </div>
+        </div>
+    </nav>
+    <div class="cart-item-container">
+        <h2 class="text-center cart-title">Cart</h2>
+    </div>
+    <!-- <div class="navbar-space"></div> -->
+    <!-- end-navbar -->
+
+    <div class="all-section">
+        <section class="section-1">
+            <div class="banner">
+                <div id="banner" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ul class="carousel-indicators">
+                        <li data-target="#banner" data-slide-to="0" class="active"></li>
+                        <li data-target="#banner" data-slide-to="1"></li>
+                        <li data-target="#banner" data-slide-to="2"></li>
+                        <li data-target="#banner" data-slide-to="3"></li>
+                    </ul>
+                    <!-- The slideshow -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <a href="product.html"><img src="images/home/banner1.png"></a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="product.html"><img src="images/home/banner2.png"></a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="product.html"><img src="images/home/banner3.png"></a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="product.html"><img src="images/home/banner4.png"></a>
+                        </div>
+                    </div>
+
+                    <!-- Left and right controls -->
+                    <a class="carousel-control-prev" href="#banner" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#banner" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="section-2">
+            <div class="container new-product-1">
+                <h2 id="new-arrivals" class="section-heading"> New Arrivals </h2>
+                <div class="heading-after"></div>
+                <div class="row">
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="product-item">
+                            <div class="product-top">
+                                <img src="images/home/hair1.jpg">
+                                <img src="">
+                                <div class="overlay">
+                                    <button type="button" class="btn btn-secondary" title="Simplon's shop"><i
+                                            class="fa fa-eye"></i></button>
+                                    <button type="button" class="btn btn-secondary" title="Add to wishlist"><i
+                                            class="fa fa-heart"></i></button>
+                                    <button type="button" class="btn btn-secondary c-cart" title="add to card"><i
+                                            class="fa fa-shopping-cart"></i></button>
+                                </div>
+                            </div>
+                            <div class="product-bottom text-center">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half-alt"></i>
+                                <h3>BH-340</h3>
+                                <p>$<span>35,66</span></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="product-item">
+                            <div class="product-top">
+                                <img src="images/home/hair2.jpg">
+                                <img src="">
+                                <div class="overlay">
+                                    <button type="button" class="btn btn-secondary" title="Simplon's shop"><i
+                                            class="fa fa-eye"></i></button>
+                                    <button type="button" class="btn btn-secondary" title="Add to wishlist"><i
+                                            class="fa fa-heart"></i></button>
+                                    <button type="button" class="btn btn-secondary c-cart" title="add to card"><i
+                                            class="fa fa-shopping-cart"></i></button>
+                                </div>
+                            </div>
+                            <div class="product-bottom text-center">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half-alt"></i>
+                                <h3>KH-235</h3>
+                                <p>$<span>55,66</span></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="product-item">
+                            <div class="product-top">
+                                <img src="images/home/hair4.jpg">
+                                <img src="">
+                                <div class="overlay">
+                                    <button type="button" class="btn btn-secondary" title="Simplon's shop"><i
+                                            class="fa fa-eye"></i></button>
+                                    <button type="button" class="btn btn-secondary" title="Add to wishlist"><i
+                                            class="fa fa-heart"></i></button>
+                                    <button type="button" class="btn btn-secondary c-cart" title="add to card"><i
+                                            class="fa fa-shopping-cart"></i></button>
+                                </div>
+                            </div>
+                            <div class="product-bottom text-center">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half-alt"></i>
+                                <h3>AH-123</h3>
+                                <p>$<span>250,66</span></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="product-item">
+                            <div class="product-top">
+                                <img src="images/home/hair5.jpg">
+                                <img src="">
+                                <div class="overlay">
+                                    <button type="button" class="btn btn-secondary" title="Simplon's shop"><i
+                                            class="fa fa-eye"></i></button>
+                                    <button type="button" class="btn btn-secondary" title="Add to wishlist"><i
+                                            class="fa fa-heart"></i></button>
+                                    <button type="button" class="btn btn-secondary c-cart" title="add to card"><i
+                                            class="fa fa-shopping-cart"></i></button>
+                                </div>
+                            </div>
+                            <div class="product-bottom text-center">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half-alt"></i>
+                                <h3>KL-300</h3>
+                                <p>$<span>15,66</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-3">
+            <div class="new-product-2 row ">
+                <div class="text-center align-items-center new-product__content col-3  p-3">
+                    <h4>New product</h4>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis libero </p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit fuga quis odio fugit perspiciatis vitae repudiandae numquam voluptate est, debitis omnis amet et impedit aliquam. Rerum unde facere commodi est!</p>
+                </div>
+                <div class="new-product__carousel col-9 pl-0 pr-0">
+                    <div id="banner70" class="carousel slide" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ul class="carousel-indicators">
+                            <li data-target="#banner70" data-slide-to="0" class="active"></li>
+                            <li data-target="#banner70" data-slide-to="1"></li>
+                            <li data-target="#banner70" data-slide-to="2"></li>
+                            <li data-target="#banner70" data-slide-to="3"></li>
+                        </ul>
+                        <!-- The slideshow -->
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <a href="product.html"><img src="images/home/269963629_354278196172670_3093712290747835846_n.jpg"></a>
+                            </div>
+                            <div class="carousel-item">
+                                <a href="product.html"><img src="images/home/270265966_4625029247606080_1952958595351197953_n.jpg"></a>
+                            </div>
+                            <div class="carousel-item">
+                                <a href="product.html"><img src="images/home/270541992_1138412556898081_2511111593523304806_n.jpg"></a>
+                            </div>
+                            <div class="carousel-item">
+                                <a href="product.html"><img src="images/home/270868435_1568404813580936_4737912500077668095_n.jpg"></a>
+                            </div>
+                        </div>
+
+                        <!-- Left and right controls -->
+                        <a class="carousel-control-prev" href="#banner70" data-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#banner70" data-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section class="section-4">
+            <div class="container review">
+                <h2 class="section-heading ">Review</h2>
+                <div class="heading-after"></div>
+                <div class="row text-center">
+                    <div class="col-lg-4 col-md-6 col-12 mb-5">
+                        <div class="review-user mt-5" id="luffy">
+                            <img src="images/home/pic-3.png" alt="" class="user-avatar mb-3">
+                            <div class="user-name mb-3">luffy</div>
+                            <p class="text-justify p-2 user-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, nam? Nostrum delectus reprehenderit fugit accusamus aut dolorum
+                            </p>
+                            <p class="text-center">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12 mb-5">
+                        <div class="review-user mt-5" id="jonh">
+                            <img src="images/home/pic-2.png" alt="" class="user-avatar mb-3">
+                            <div class="user-name mb-3">Jonh</div>
+                            <p class="text-justify p-2 user-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, nam? Nostrum delectus reprehenderit fugit accusamus aut dolorum
+                            </p>
+                            <p class="text-center">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <i class="far fa-star"></i>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12 mb-5">
+                        <div class="review-user mt-5" id="peter">
+                            <img src="images/home/pic-1.png" alt="" class="user-avatar mb-3">
+                            <div class="user-name mb-3">Peter</div>
+                            <p class="text-justify p-2 user-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, nam? Nostrum delectus reprehenderit fugit accusamus aut dolorum
+                            </p>
+                            <p class="text-center">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- <div class="container path mt-5 mb-5">
+            <hr>
+        </div> -->
+        <section class="section-5">
+            <div class=" feedback container">
+                <h2 class="section-heading">FeedBack</h2>
+                <div class="heading-after"></div>
+                <form class="feedback-form row">
+                    <div class="form-field col-lg-6">
+                        <input id="name" class="input-text js-input" type="text" required>
+                        <label class="label" for="name">Name</label>
+                    </div>
+                    <div class="form-field col-lg-6 ">
+                        <input id="email" class="input-text js-input" type="email" required>
+                        <label class="label" for="email">E-mail</label>
+                    </div>
+                    <div class="form-field col-lg-12 ">
+                        <input id="phone" class="input-text js-input" type="text" required>
+                        <label class="label" for="phone">Contact Number</label>
+                    </div>
+                    <div class="form-field col-lg-12">
+                        <input id="message" class="input-text js-input" type="text" required>
+                        <label class="label" for="message">Message</label>
+                    </div>
+                    <div class="form-field col-lg-12">
+                        <input class="submit-btn" type="submit" value="Submit">
+                    </div>
+                </form>
+            </div>
+        </section>
+        <!-- <div class="container path mt-5 mb-5">
+            <hr>
+        </div> -->
+    </div>
+
+    <footer>
+        <div class="footer-top pt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 mb-3">
+                        <h3 class=" footer-heading mb-3">Get in Touch</h3>
+                        <p>Don’t miss any updates of our new templates and extensions.!</p>
+                        <form action="#" method="post">
+                            <input type="text" class="email footer-top__email" required placeholder="Email">
+                            <input type="submit" value="Send" class="text-center footer-btn">
+                        </form>
+                    </div>
+                    <div class="footer-menu col-lg-3 col-md-6 mb-3">
+                        <h3 class=" footer-heading mb-3">Menu</h3>
+                        <ul class=" ">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Product</a></li>
+                            <li><a href="#">Gellary</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Review</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-3">
+                        <h3 class=" footer-heading mb-3">Help</h3>
+                        <ul class=" ">
+                            <li><a href="#">phone: 102942-23261</a></li>
+                            <li><a href="#">Address: 38 Yen Bai, Da Nang, Vietnam, Da Nang </a></li>
+                            <li><a href="#">Hotline: 19002345 </a></li>
+                            <li>
+                                <a href="#"></a>
+                            </li>
+                            <li><a href="#">Support Policy</a></li>
+                            <li><a href="#">Privacy</a></li>
+                        </ul>
+
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-3">
+                        <h3 class=" footer-heading mb-3">Team Solutions</h3>
+                        <div class="footer-top__icon d-flex justify-content-between">
+                            <a href="#" class="fab fa-facebook"></a>
+                            <a href="#" class="fab fa-twitter"></a>
+                            <a href="#" class="fab fa-linkedin"></a>
+                            <a href="#" class="fab fa-pinterest"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-sm-7">
+                        <p class="mb-0">© cakecounter Inc.. <i>2021 All rights reserved.</i></p>
+                    </div>
+                    <div class="col-lg-6 col-sm-5 text-right">
+                        <p class="mb-0">Made with in <i>CakeCounter</i></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
